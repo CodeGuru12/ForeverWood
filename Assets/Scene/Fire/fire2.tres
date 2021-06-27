@@ -1,0 +1,36 @@
+[gd_resource type="AnimatedTexture" load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Scene/Fire/image_part_008.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Scene/Fire/image_part_009.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Scene/Fire/image_part_001.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Scene/Fire/image_part_010.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Scene/Fire/image_part_006.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Scene/Fire/image_part_004.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Scene/Fire/image_part_002.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Scene/Fire/image_part_003.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Scene/Fire/image_part_005.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Scene/Fire/image_part_007.png" type="Texture" id=50]
+
+[resource]
+flags = 4
+frames = 10
+fps = 10.0
+frame_0/texture = ExtResource( 25 )
+frame_1/texture = ExtResource( 38 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 41 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 32 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 46 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 31 )
+frame_5/delay_sec = 0.0
+frame_6/texture = ExtResource( 50 )
+frame_6/delay_sec = 0.0
+frame_7/texture = ExtResource( 20 )
+frame_7/delay_sec = 0.0
+frame_8/texture = ExtResource( 23 )
+frame_8/delay_sec = 0.0
+frame_9/texture = ExtResource( 30 )
+frame_9/delay_sec = 0.0

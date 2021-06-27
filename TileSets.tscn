@@ -1,0 +1,1616 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://addons/TileSetCutter/tilesetcutter.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Scene/Tree_242x288.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Scene/rocks_and_logs.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Scene/grass_dirt.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Scene/miscellaneous.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Scene/plants.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Scene/bush.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Scene/hole.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Scene/cliff.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Scene/waterfall.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Scene/water_edge.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Scene/cliffEdge.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Scene/pole.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Scene/water_edge_flipped.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Scene/water_edge_mirror.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Scene/water_edge_mirroflipped.png" type="Texture" id=16]
+
+[node name="TileMap" type="TileMap"]
+format = 1
+
+[node name="TileSetCutter" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 4 )
+
+[node name="grass_dirt27" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 48, 0 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="grass_dirt26" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 96, 0 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="grass_dirt25" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 144, 0 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 48 )
+
+[node name="grass_dirt24" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 192, 0, 48, 48 )
+
+[node name="grass_dirt23" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 0, 48 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="grass_dirt22" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 48, 48 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="grass_dirt21" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 96, 48 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="grass_dirt20" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 144, 48 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 144, 48, 48, 48 )
+
+[node name="grass_dirt19" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 192, 48 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 192, 48, 48, 48 )
+
+[node name="grass_dirt18" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 0, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="grass_dirt17" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 48, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="grass_dirt16" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 96, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="grass_dirt15" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 144, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 144, 96, 48, 48 )
+
+[node name="grass_dirt14" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 192, 96 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 48, 48 )
+
+[node name="grass_dirt13" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 0, 144 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 48, 48 )
+
+[node name="grass_dirt12" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 48, 144 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 144, 48, 48 )
+
+[node name="grass_dirt11" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 96, 144 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 48, 48 )
+
+[node name="grass_dirt10" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 144, 144 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 144, 144, 48, 48 )
+
+[node name="grass_dirt9" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 192, 144 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 192, 144, 48, 48 )
+
+[node name="grass_dirt8" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 0, 192 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 48, 48 )
+
+[node name="grass_dirt7" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 48, 192 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 48, 48 )
+
+[node name="grass_dirt6" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 96, 192 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 48, 48 )
+
+[node name="grass_dirt5" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 144, 192 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 144, 192, 48, 48 )
+
+[node name="grass_dirt4" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 48, 240 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 48, 240, 48, 48 )
+
+[node name="grass_dirt3" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 96, 240 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 96, 240, 48, 48 )
+
+[node name="grass_dirt2" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 144, 240 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 144, 240, 48, 48 )
+
+[node name="grass_dirt" type="Sprite" parent="TileSetCutter"]
+position = Vector2( 192, 240 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 192, 240, 48, 48 )
+
+[node name="TileSetCutter2" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 95, 97 )
+TextureToCut = ExtResource( 3 )
+
+[node name="rock" type="Sprite" parent="TileSetCutter2"]
+position = Vector2( 561.266, -8.90898 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 95, 97 )
+
+[node name="rockLog" type="Sprite" parent="TileSetCutter2"]
+position = Vector2( 861.173, -8.90898 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 95, 0, 95, 97 )
+
+[node name="Log" type="Sprite" parent="TileSetCutter2"]
+position = Vector2( 741.228, 125.509 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 97, 95, 97 )
+
+[node name="Log2" type="Sprite" parent="TileSetCutter2"]
+position = Vector2( 570.74, 130.854 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 95, 97, 95, 97 )
+
+[node name="Log3" type="Sprite" parent="TileSetCutter2"]
+position = Vector2( 896.244, 131.637 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 194, 95, 97 )
+
+[node name="Log4" type="Sprite" parent="TileSetCutter2"]
+position = Vector2( 984.117, 135.201 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 95, 194, 95, 97 )
+
+[node name="TileSetCutter3" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 242, 144 )
+TextureToCut = ExtResource( 2 )
+
+[node name="TopTree" type="Sprite" parent="TileSetCutter3"]
+position = Vector2( 912.379, 438.189 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 242, 144 )
+
+[node name="BottomTree" type="Sprite" parent="TileSetCutter3"]
+position = Vector2( 916.154, 581.117 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 242, 144 )
+
+[node name="TileSetCutter4" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 96, 48 )
+TextureToCut = ExtResource( 8 )
+
+[node name="Hole" type="Sprite" parent="TileSetCutter4"]
+position = Vector2( 384.276, 80.6349 )
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 48 )
+
+[node name="TileSetCutter5" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 6 )
+
+[node name="flowerTOp" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 739.697, 250.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="flower" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 787.697, 250.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="flowerBottom" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 739.697, 298.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="flower2" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 787.697, 298.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="flower3" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 691.697, 346.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="flower4" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 739.697, 346.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="flower5" type="Sprite" parent="TileSetCutter5"]
+position = Vector2( 787.697, 346.724 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="TileSetCutter8" type="Node2D" parent="."]
+position = Vector2( 321.28, 220.486 )
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 9 )
+
+[node name="cliff4" type="Sprite" parent="TileSetCutter8"]
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="cliff5" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 48, 0 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="cliff6" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 96, 0 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="cliff7" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 144, 0 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 48 )
+
+[node name="cliff8" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 192, 0 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 0, 48, 48 )
+
+[node name="cliff9" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 0 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 0, 48, 48 )
+
+[node name="cliff10" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 0, 48 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="cliff11" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 48, 48 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="cliff14" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 192, 48 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 48, 48, 48 )
+
+[node name="cliff15" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 48 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 48, 48, 48 )
+
+[node name="cliff16" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 0, 96 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="cliff17" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 48, 96 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="cliff18" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 97.0594, 97.0595 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="cliff19" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 144, 96 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 144, 96, 48, 48 )
+
+[node name="cliff20" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 192, 96 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 48, 48 )
+
+[node name="cliff21" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 96 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 96, 48, 48 )
+
+[node name="cliff22" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 0, 144 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 48, 48 )
+
+[node name="cliff23" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 48, 144 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 144, 48, 48 )
+
+[node name="cliff24" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 96.8909, 144 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 48, 48 )
+
+[node name="cliff25" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 144, 143.109 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 144, 144, 48, 48 )
+
+[node name="cliff26" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 192, 144 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 144, 48, 48 )
+
+[node name="cliff27" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 144 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 144, 48, 48 )
+
+[node name="cliff28" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( -0.8909, 192.891 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 48, 48 )
+
+[node name="cliff29" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 47.1091, 192.891 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 48, 48 )
+
+[node name="cliff30" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 96, 192 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 48, 48 )
+
+[node name="cliff31" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 145.189, 192 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 144, 192, 48, 48 )
+
+[node name="cliff32" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 192, 192 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 192, 48, 48 )
+
+[node name="cliff33" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 192 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 192, 48, 48 )
+
+[node name="cliff34" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 0, 239.631 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 240, 48, 48 )
+
+[node name="cliff35" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 48.8909, 240 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 240, 48, 48 )
+
+[node name="cliff36" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 94.8108, 240 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 96, 240, 48, 48 )
+
+[node name="cliff37" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 144, 240 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 144, 240, 48, 48 )
+
+[node name="cliff38" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 193.189, 240.298 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 240, 48, 48 )
+
+[node name="cliff39" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 240 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 240, 48, 48 )
+
+[node name="cliff40" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 0, 288 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 288, 48, 48 )
+
+[node name="cliff41" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 48, 288 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 288, 48, 48 )
+
+[node name="cliff42" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 99.0417, 288 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 96, 288, 48, 48 )
+
+[node name="cliff43" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 142.74, 286.74 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 144, 288, 48, 48 )
+
+[node name="cliff44" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 192, 289.189 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 192, 288, 48, 48 )
+
+[node name="cliff45" type="Sprite" parent="TileSetCutter8"]
+position = Vector2( 240, 288 )
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 240, 288, 48, 48 )
+
+[node name="TileSetCutter6" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 5 )
+
+[node name="caveEdge" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -432.68, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="caveEnter" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -384.68, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 48 )
+
+[node name="caveEnter2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -337.802, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 192, 0, 48, 48 )
+
+[node name="caveEdge2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -288.68, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 240, 0, 48, 48 )
+
+[node name="caveEdge3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -240.68, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 288, 0, 48, 48 )
+
+[node name="caveEdge4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -193.869, 439.477 )
+scale = Vector2( 1, 1.02478 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 336, 0, 48, 48 )
+
+[node name="caveEdge5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -144.68, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 384, 0, 48, 48 )
+
+[node name="waterEdge2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -97.5704, 439.774 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 432, 0, 48, 48 )
+
+[node name="redWater" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -48.6795, 437.693 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 480, 0, 48, 48 )
+
+[node name="water11" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 2.3205, 444.218 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 528, 0, 48, 48 )
+
+[node name="waterEffect7" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 46.1981, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 576, 0, 48, 48 )
+
+[node name="waterEffect8" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 95.3205, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 624, 0, 48, 48 )
+
+[node name="waterEffect9" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 143.32, 438.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 672, 0, 48, 48 )
+
+[node name="caveEdge6" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -432.68, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="caveEnter3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -384.118, 486.883 )
+scale = Vector2( 1.02338, 1 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 144, 48, 48, 48 )
+
+[node name="caveEnter4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -336.68, 485.76 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 192, 48, 48, 48 )
+
+[node name="caveEdge7" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -288.68, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 240, 48, 48, 48 )
+
+[node name="caveEdge8" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -240.68, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 288, 48, 48, 48 )
+
+[node name="caveEdge9" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -192.68, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 336, 48, 48, 48 )
+
+[node name="caveEdge10" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -144.68, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 384, 48, 48, 48 )
+
+[node name="waterEdge3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -93.8552, 488.566 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 432, 48, 48, 48 )
+
+[node name="water10" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -0.679504, 483.995 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 528, 48, 48, 48 )
+
+[node name="waterEffect6" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 47.3205, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 576, 48, 48, 48 )
+
+[node name="waterEffect5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 95.3205, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 624, 48, 48, 48 )
+
+[node name="waterEffect4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 143.32, 486.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 672, 48, 48, 48 )
+
+[node name="caveEdge11" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -432.68, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="caveEnter5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -386.924, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 144, 96, 48, 48 )
+
+[node name="caveEnter6" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -336.68, 533.76 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 48, 48 )
+
+[node name="shadow10" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -240.68, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 288, 96, 48, 48 )
+
+[node name="caveEdge12" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -192.68, 536.072 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 336, 96, 48, 48 )
+
+[node name="caveEdge17" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -143.49, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 384, 96, 48, 48 )
+
+[node name="waterEdge4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -96.6795, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 432, 96, 48, 48 )
+
+[node name="redWater4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -48.6795, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 480, 96, 48, 48 )
+
+[node name="edge2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 1.20825, 532.995 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 528, 96, 48, 48 )
+
+[node name="waterEffect" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 47.3205, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 576, 96, 48, 48 )
+
+[node name="waterEffect3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 95.3205, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 624, 96, 48, 48 )
+
+[node name="waterEffect2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 143.32, 534.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 672, 96, 48, 48 )
+
+[node name="stairs6" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -431.49, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 48, 48 )
+
+[node name="stairs5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -384.68, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 144, 144, 48, 48 )
+
+[node name="shadow7" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -336.68, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 192, 144, 48, 48 )
+
+[node name="shadow8" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -288.68, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 240, 144, 48, 48 )
+
+[node name="shadow9" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -240.68, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 288, 144, 48, 48 )
+
+[node name="caveEdge13" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -193.869, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 336, 144, 48, 48 )
+
+[node name="caveEdge16" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -144.68, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 384, 144, 48, 48 )
+
+[node name="waterEdge" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -96.6795, 580.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 432, 144, 48, 48 )
+
+[node name="redWater2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -48.6795, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 480, 144, 48, 48 )
+
+[node name="edge" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -2.52039, 579.107 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 528, 144, 48, 48 )
+
+[node name="water70" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 47.3205, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 576, 144, 48, 48 )
+
+[node name="water71" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 95.3205, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 624, 144, 48, 48 )
+
+[node name="water72" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 145.102, 582.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 672, 144, 48, 48 )
+
+[node name="stairs4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -382.301, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 144, 192, 48, 48 )
+
+[node name="shadow4" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -336.68, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 192, 192, 48, 48 )
+
+[node name="shadow5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -288.68, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 240, 192, 48, 48 )
+
+[node name="shadow6" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -240.68, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 288, 192, 48, 48 )
+
+[node name="caveEdge14" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -192.68, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 336, 192, 48, 48 )
+
+[node name="caveEdge15" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -142.301, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 384, 192, 48, 48 )
+
+[node name="waterEdge5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -96.6795, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 432, 192, 48, 48 )
+
+[node name="redWater3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -48.6795, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 480, 192, 48, 48 )
+
+[node name="water73" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -0.679504, 631.724 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 528, 192, 48, 48 )
+
+[node name="water74" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 46.1313, 632.072 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 576, 192, 48, 48 )
+
+[node name="water75" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 96.5097, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 624, 192, 48, 48 )
+
+[node name="water76" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( 143.32, 630.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 672, 192, 48, 48 )
+
+[node name="stairs" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -528.68, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 0, 240, 48, 48 )
+
+[node name="stairs2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -480.68, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 48, 240, 48, 48 )
+
+[node name="stairs3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -432.68, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 96, 240, 48, 48 )
+
+[node name="shadow" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -336.68, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 192, 240, 48, 48 )
+
+[node name="shadow2" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -286.898, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 240, 240, 48, 48 )
+
+[node name="shadow3" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -240.68, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 288, 240, 48, 48 )
+
+[node name="waterEdge6" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -96.6795, 680.218 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 432, 240, 48, 48 )
+
+[node name="redWater5" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -48.6795, 680.072 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 480, 240, 48, 48 )
+
+[node name="waterEdge7" type="Sprite" parent="TileSetCutter6"]
+position = Vector2( -1.86871, 678.883 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 528, 240, 48, 48 )
+
+[node name="TileSetCutter7" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 96, 96 )
+TextureToCut = ExtResource( 7 )
+
+[node name="bush" type="Sprite" parent="TileSetCutter7"]
+position = Vector2( 680.309, 557.959 )
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 96, 96 )
+
+[node name="TileSetCutter9" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 10 )
+
+[node name="waterfall" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 389.882, 750.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="waterfall2" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 437.882, 750.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="waterfall3" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 485.882, 750.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="waterfall4" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 533.882, 750.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 48 )
+
+[node name="waterfall5" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 389.882, 798.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="waterfall6" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 437.882, 798.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="waterfall7" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 485.882, 798.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="waterfall8" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 533.882, 798.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 144, 48, 48, 48 )
+
+[node name="waterfall9" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 389.882, 846.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="waterfall10" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 437.882, 846.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="waterfall11" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 485.882, 846.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="waterfall12" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 533.882, 846.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 144, 96, 48, 48 )
+
+[node name="waterfall13" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 389.882, 894.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 48, 48 )
+
+[node name="waterfall14" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 437.882, 894.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 48, 144, 48, 48 )
+
+[node name="waterfall15" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 485.882, 894.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 48, 48 )
+
+[node name="waterfall16" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 533.882, 894.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 144, 144, 48, 48 )
+
+[node name="waterfall17" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 389.882, 942.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 48, 48 )
+
+[node name="waterfall18" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 437.882, 942.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 48, 48 )
+
+[node name="waterfall19" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 485.882, 942.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 48, 48 )
+
+[node name="waterfall20" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 533.882, 942.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 144, 192, 48, 48 )
+
+[node name="waterfall21" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 389.882, 990.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 0, 240, 48, 48 )
+
+[node name="waterfall22" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 437.882, 990.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 48, 240, 48, 48 )
+
+[node name="waterfall23" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 485.882, 990.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 96, 240, 48, 48 )
+
+[node name="waterfall24" type="Sprite" parent="TileSetCutter9"]
+position = Vector2( 533.882, 990.1 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 144, 240, 48, 48 )
+
+[node name="TileSetCutter10" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 11 )
+
+[node name="waterEdge18" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 408.461, -202.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="waterEdge17" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 456.461, -202.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="waterEdge16" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 504.461, -202.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="waterEdge15" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 552.461, -202.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 48 )
+
+[node name="waterEdge14" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 600.461, -202.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 192, 0, 48, 48 )
+
+[node name="waterEdge13" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 648.461, -202.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 240, 0, 48, 48 )
+
+[node name="waterEdge12" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 408.461, -154.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="waterEdge11" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 456.461, -154.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="waterEdge10" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 504.461, -154.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="waterEdge9" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 552.461, -154.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 144, 48, 48, 48 )
+
+[node name="waterEdge8" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 600.461, -154.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 192, 48, 48, 48 )
+
+[node name="waterEdge7" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 648.461, -154.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 240, 48, 48, 48 )
+
+[node name="waterEdge6" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 408.461, -106.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="waterEdge5" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 456.461, -106.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="waterEdge4" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 504.461, -106.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="waterEdge3" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 552.461, -106.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 144, 96, 48, 48 )
+
+[node name="waterEdge2" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 600.461, -106.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 48, 48 )
+
+[node name="waterEdge" type="Sprite" parent="TileSetCutter10"]
+position = Vector2( 648.461, -106.896 )
+texture = ExtResource( 11 )
+region_enabled = true
+region_rect = Rect2( 240, 96, 48, 48 )
+
+[node name="TileSetCutter12" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 14 )
+
+[node name="waterEdgeFlip" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -423.836, -274.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="waterEdgeFlip2" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -375.836, -274.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="waterEdgeFlip3" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -327.836, -274.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="waterEdgeFlip4" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -423.836, -226.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="waterEdgeFlip5" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -375.836, -226.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="waterEdgeFlip6" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -327.836, -226.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="waterEdgeFlip7" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -423.836, -178.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="waterEdgeFlip8" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -375.836, -178.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="waterEdgeFlip9" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -327.836, -178.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="waterEdgeFlip10" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -423.836, -130.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 48, 48 )
+
+[node name="waterEdgeFlip11" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -375.836, -130.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 48, 144, 48, 48 )
+
+[node name="waterEdgeFlip12" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -327.836, -130.62 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 48, 48 )
+
+[node name="waterEdgeFlip13" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -423.836, -82.6203 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 48, 48 )
+
+[node name="waterEdgeFlip14" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -375.836, -82.6203 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 48, 48 )
+
+[node name="waterEdgeFlip15" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -327.836, -82.6203 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 48, 48 )
+
+[node name="waterEdgeFlip16" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -423.836, -34.6203 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 0, 240, 48, 48 )
+
+[node name="waterEdgeFlip17" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -375.836, -34.6203 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 48, 240, 48, 48 )
+
+[node name="waterEdgeFlip18" type="Sprite" parent="TileSetCutter12"]
+position = Vector2( -327.836, -34.6203 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 96, 240, 48, 48 )
+
+[node name="TileSetCutter11" type="Node2D" parent="."]
+position = Vector2( -6.34955, 0 )
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 12 )
+
+[node name="cliffEdge12" type="Sprite" parent="TileSetCutter11"]
+position = Vector2( 288.907, -74.6078 )
+texture = ExtResource( 12 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="cliffEdge13" type="Sprite" parent="TileSetCutter11"]
+position = Vector2( 336.907, -73.0204 )
+texture = ExtResource( 12 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="pole" type="Sprite" parent="."]
+position = Vector2( -136.848, 296.665 )
+texture = ExtResource( 13 )
+offset = Vector2( 0, -16 )
+
+[node name="TileSetCutter14" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 16 )
+
+[node name="waterMirrorFlip" type="Sprite" parent="TileSetCutter14"]
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="waterMirrorFlip2" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 48, 0 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="waterMirrorFlip3" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 96, 0 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="waterMirrorFlip4" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 0, 48 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="waterMirrorFlip5" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 48, 48 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="waterMirrorFlip6" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 96, 48 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="waterMirrorFlip7" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 0, 96 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="waterMirrorFlip8" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 48, 96 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="waterMirrorFlip9" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 96, 96 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="waterMirrorFlip10" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 0, 144 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 0, 144, 48, 48 )
+
+[node name="waterMirrorFlip11" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 48, 144 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 48, 144, 48, 48 )
+
+[node name="waterMirrorFlip12" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 96, 144 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 96, 144, 48, 48 )
+
+[node name="waterMirrorFlip13" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 0, 192 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 48, 48 )
+
+[node name="waterMirrorFlip14" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 48, 192 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 48, 48 )
+
+[node name="waterMirrorFlip15" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 96, 192 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 48, 48 )
+
+[node name="waterMirrorFlip16" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 0, 240 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 0, 240, 48, 48 )
+
+[node name="waterMirrorFlip17" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 48, 240 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 48, 240, 48, 48 )
+
+[node name="waterMirrorFlip18" type="Sprite" parent="TileSetCutter14"]
+position = Vector2( 96, 240 )
+texture = ExtResource( 16 )
+region_enabled = true
+region_rect = Rect2( 96, 240, 48, 48 )
+
+[node name="TileSetCutter13" type="Node2D" parent="."]
+script = ExtResource( 1 )
+TileSize = Vector2( 48, 48 )
+TextureToCut = ExtResource( 15 )
+
+[node name="waterEdgeMirror" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -944.941, -5.0397 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 48, 48 )
+
+[node name="waterEdgeMirror2" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -896.941, -5.0397 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 48, 48 )
+
+[node name="waterEdgeMirror3" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -848.941, -5.0397 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 48, 48 )
+
+[node name="waterEdgeMirror4" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -800.941, -5.0397 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 48 )
+
+[node name="waterEdgeMirror5" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -752.941, -5.0397 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 192, 0, 48, 48 )
+
+[node name="waterEdgeMirror6" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -704.941, -5.0397 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 240, 0, 48, 48 )
+
+[node name="waterEdgeMirror7" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -944.941, 42.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 0, 48, 48, 48 )
+
+[node name="waterEdgeMirror8" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -896.941, 42.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 48, 48 )
+
+[node name="waterEdgeMirror9" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -848.941, 42.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 48, 48 )
+
+[node name="waterEdgeMirror10" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -800.941, 42.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 144, 48, 48, 48 )
+
+[node name="waterEdgeMirror11" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -752.941, 42.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 192, 48, 48, 48 )
+
+[node name="waterEdgeMirror12" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -704.941, 42.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 240, 48, 48, 48 )
+
+[node name="waterEdgeMirror13" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -944.941, 90.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 48, 48 )
+
+[node name="waterEdgeMirror14" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -896.941, 90.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 48, 48 )
+
+[node name="waterEdgeMirror15" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -848.941, 90.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 48, 48 )
+
+[node name="waterEdgeMirror16" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -800.941, 90.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 144, 96, 48, 48 )
+
+[node name="waterEdgeMirror17" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -752.941, 90.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 48, 48 )
+
+[node name="waterEdgeMirror18" type="Sprite" parent="TileSetCutter13"]
+position = Vector2( -704.941, 90.9603 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 240, 96, 48, 48 )

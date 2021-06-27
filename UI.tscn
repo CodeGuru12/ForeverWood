@@ -1,0 +1,112 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://HUD.gd" type="Script" id=1]
+[ext_resource path="res://Font/Roboto-Bold.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Font/Roboto-Regular.tres" type="DynamicFont" id=3]
+[ext_resource path="res://UI.gd" type="Script" id=4]
+[ext_resource path="res://UI/hud_bg_without_custom_meter.png" type="Texture" id=5]
+[ext_resource path="res://UI/hp_bar.png" type="Texture" id=6]
+[ext_resource path="res://UI/mp_bar.png" type="Texture" id=7]
+
+[node name="UI" type="Control"]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup" type="Popup" parent="."]
+visible = true
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="Popup"]
+self_modulate = Color( 0.141176, 0.12549, 0.12549, 1 )
+anchor_left = 10.15
+anchor_top = 15.189
+anchor_right = 10.15
+anchor_bottom = 15.189
+margin_left = 191.396
+margin_top = -114.796
+margin_right = 612.396
+margin_bottom = -9.79602
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelBG" type="TextureRect" parent="Popup/BG"]
+margin_left = 13.3636
+margin_top = 10.6364
+margin_right = 98.3636
+margin_bottom = 86.6364
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelText" type="Label" parent="Popup/BG/LevelBG"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 14.2803
+margin_top = 3.79919
+margin_right = 78.2803
+margin_bottom = 69.7992
+custom_fonts/font = ExtResource( 2 )
+custom_constants/shadow_as_outline = 0
+text = "25"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="Popup/BG"]
+anchor_left = -0.002
+anchor_right = -0.002
+margin_left = 107.842
+margin_top = 28.0
+margin_right = 335.842
+margin_bottom = 42.0
+value = 50.0
+texture_under = ExtResource( 6 )
+texture_progress = ExtResource( 6 )
+tint_under = Color( 0.282353, 0.258824, 0.258824, 1 )
+tint_progress = Color( 1, 0.027451, 0.027451, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="XPBar" type="TextureProgress" parent="Popup/BG"]
+margin_left = 107.0
+margin_top = 44.0
+margin_right = 335.0
+margin_bottom = 53.0
+value = 100.0
+texture_under = ExtResource( 7 )
+texture_progress = ExtResource( 7 )
+tint_under = Color( 0.282353, 0.258824, 0.258824, 1 )
+tint_progress = Color( 0.109804, 0.466667, 0.117647, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoldText" type="Label" parent="Popup/BG"]
+margin_left = 13.504
+margin_top = 58.7582
+margin_right = 262.504
+margin_bottom = 77.7582
+custom_fonts/font = ExtResource( 3 )
+text = "Credits: "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

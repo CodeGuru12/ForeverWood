@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/The-Epic-Hero-Epic-Cinematic-Keys-of-Moon-Music.wav-d9764ca5239af87bcd0206cf2659ac15.sample"
+
+[deps]
+
+source_file="res://Music/The-Epic-Hero-Epic-Cinematic-Keys-of-Moon-Music.wav"
+dest_files=[ "res://.import/The-Epic-Hero-Epic-Cinematic-Keys-of-Moon-Music.wav-d9764ca5239af87bcd0206cf2659ac15.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

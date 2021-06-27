@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Wind-Shoowsh-Very-Quick-www.fesliyanstudios.com.mp3-b256212f8cbb4f57e9c9e9db8e0e5217.mp3str"
+
+[deps]
+
+source_file="res://SoundEffects/Attack/Wind-Shoowsh-Very-Quick-www.fesliyanstudios.com.mp3"
+dest_files=[ "res://.import/Wind-Shoowsh-Very-Quick-www.fesliyanstudios.com.mp3-b256212f8cbb4f57e9c9e9db8e0e5217.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

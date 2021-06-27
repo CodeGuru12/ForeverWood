@@ -1,0 +1,109 @@
+{
+  "Apple": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 2,
+    "StackSize": 99,
+    "Description": "A shiny red apple."
+  },
+  "Small Health Potion": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 2,
+    "AddEnergy": 32,
+    "StackSize": 99,
+    "Description": "Heal a small portion of health."
+  },
+  "Bag": {
+    "ItemCategory": "Slots",
+    "AddSlots": 6,
+    "StackSize": 99,
+    "Description": "Adds more slots to your inventory"
+  },
+  "Normal Health Potion": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "AddEnergy": 32,
+    "StackSize": 99,
+    "Description": "Heal a good portion of health."
+  },
+  "Large Health Potion": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 10,
+    "AddEnergy": 32,
+    "StackSize": 99,
+    "Description": "Heal a large portion of health."
+  },
+  "Berserk Potion": {
+    "ItemCategory": "Consumable",
+    "CureSlow": 1,
+    "StackSize": 99,
+    "Description": "It will make you faster."
+  },
+  "Antidote": {
+    "ItemCategory": "Consumable",
+    "CurePoison": 1,
+    "StackSize": 99,
+    "Description": "Poison remedy. It smells like cough syrup."
+  },
+  "Golden Sword": {
+    "ItemCategory": "Sword",
+    "ItemAttack": 3,
+    "ItemSpeed": 0.75, 
+    "StackSize": 1,
+    "Description": "Gold sword, why is it gold?"
+  },
+  "Beer": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 2,
+    "Drunk": 2,
+    "StackSize": 99,
+    "Description": "An ale of beer!"
+  },
+  "Bread": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 1,
+    "StackSize": 99,
+    "Description": "A loaf of bread."
+  },
+  "Cheese": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 1,
+    "StackSize": 99,
+    "Description": "A cheese slice."
+  },
+  "Chicken": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 1,
+    "StackSize": 99,
+    "Description": "A chicken drumpstick."
+  },
+    "Fish Steak": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 2,
+    "StackSize": 99,
+    "Description": "A piece of fish."
+  },
+    "Mushroom": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 1,
+    "StackSize": 99,
+    "Description": "A mushroom. It smells like feet."
+  },
+    "Green Apple": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 1,
+    "StackSize": 99,
+    "Description": "A green apple. "
+  },
+    "Meat": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 1,
+    "StackSize": 99,
+    "Description": "A piece of meat. Why is it already sliced? "
+  },
+    "Green Crystal": {
+    "ItemCategory": "Valuable",
+    "SellPrice": 2,
+    "StackSize": 99,
+    "Description": "Green colored gem. Some people like these."
+    }
+}

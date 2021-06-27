@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/opening-door-1-www.FesliyanStudios.com.wav-64d035082618b4c4cbd1c0db4f00dbdc.sample"
+
+[deps]
+
+source_file="res://SoundEffects/Chest/Opening/opening-door-1-www.FesliyanStudios.com.wav"
+dest_files=[ "res://.import/opening-door-1-www.FesliyanStudios.com.wav-64d035082618b4c4cbd1c0db4f00dbdc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
