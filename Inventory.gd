@@ -8,8 +8,10 @@ var holding_item = null
 #var temp_item = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for inv_slot in inventory_slots.get_children():
-		inv_slot.connect("gui_input",self, "slot_gui_input", [inv_slot])
+	var slots = inventory_slots.get_children()
+	for i in range(slots.size()):
+		slots[i].connect("gui_input",self, "slot_gui_input", [slots[i]])
+		slots[i].slot_index = i
 	initialize_inventory()
 	
 func initialize_inventory():
@@ -57,6 +59,7 @@ func click_combine_slot(slot: SlotClass):
 		holding_item.decrease_item_quantity(addSize)
 
 func click_add_slot(slot: SlotClass):
+	PlayerInventory.add_item_to_empty_slot(holding_item,slot)
 	holding_item = slot.item
 	slot.pickFromSlot()
 	holding_item.global_position = get_global_mouse_position()

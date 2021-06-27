@@ -7,7 +7,12 @@ const ItemClass = preload("res://Item.gd")
 
 const NUM_INVENTORY_SLOTS = 18
 const NUM_HOTBAR_SLOTS = 8
-var inventory = {0: ['Golden Sword', 1]}
+var inventory = {0: ['Golden Sword', 1], 
+				 1: ['Apple', 46],
+				 2: ['Apple', 30],
+				 4: ['Small Health Potion',1],
+				 3: ['Chicken', 10]
+				}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,41 +41,46 @@ func add_item(item_name, item_quantity):
 			update_slot_visual(i, inventory[i][0], inventory[i][1])
 			return
 	
-func remove_item(item_name, item_quantity):
-	var slot_indices: Array = inventory.keys()
-	var item_found = false
-	slot_indices.sort()
-	for item in slot_indices:
-		if inventory[item][0] == item_name:
-				inventory[item][1] -= item_quantity
-				if (inventory[item][1] > 0):
-					print("we still coming in here?")
-					print('inventory[item][1]:',inventory[item][1])
-					update_slot_visual(item, inventory[item][0], inventory[item][1])
-				else:
-					var slot = get_tree().root.get_node("/root/MainScene/UserInterface/Inventory/GridContainer/Panel" + str(item + 1))
-					#Remove slot item visual
-					slot.removeSlotItem()
-					#Remove from dictionary, not doing this will cause the item to get added back to the inventory visual
-					inventory.erase(item)
-
-				item_found = true
-				break
-	return item_found
-
 	# item doesn't exist in inventory yet, so add it to an empty slot
 	for i in range(NUM_INVENTORY_SLOTS):
 		if inventory.has(i) == false:
 			inventory[i] = [item_name, item_quantity]
 			update_slot_visual(i, inventory[i][0], inventory[i][1])
 			return	
-			
+
+func add_item_to_empty_slot(item: ItemClass, slot: SlotClass):
+	inventory[slot.slot_index] = [slot.item.item_name, slot.item.item_quantity]
+
 func update_slot_visual(slot_index, item_name, new_quantity):
 	var slot = get_tree().root.get_node("/root/MainScene/UserInterface/Inventory/GridContainer/Panel" + str(slot_index + 1))
 	if slot.item != null:
 		slot.item.set_item(item_name, new_quantity)
 	else:
 		slot.initialize_item(item_name, new_quantity)
+
+func remove_item(item_name, item_quantity):
+	var slot_indices: Array = inventory.keys()
+	var item_found = false
+	slot_indices.sort()
+	for item in slot_indices:
+		if inventory[item][0] == item_name:
+			inventory[item][1] -= item_quantity
+			if (inventory[item][1] > 0):
+				update_slot_visual(item, inventory[item][0], inventory[item][1])
+			else:
+				var slot = get_tree().root.get_node("/root/MainScene/UserInterface/Inventory/GridContainer/Panel" + str(item + 1))
+				#Remove slot item visual
+				slot.removeSlotItem()
+				#Remove from dictionary, not doing this will cause the item to get added back to the inventory visual
+				remove_from_dict(slot)
+
+			item_found = true
+			break
+	return item_found
+
+
+func remove_from_dict(slot: SlotClass):
+	inventory.erase(slot.slot_index)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

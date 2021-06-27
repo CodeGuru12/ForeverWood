@@ -5,7 +5,7 @@ extends Panel
 var ItemClass = preload("res://Item.tscn")
 var empty_slot = preload("res://UI/Inventory/empty_slot.png")
 var default_slot = preload("res://UI/Inventory/item.png")
-
+var slot_index
 var size = empty_slot.get_size()
 var item = null
 onready var gridNode = find_parent("GridContainer")
