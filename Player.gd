@@ -33,9 +33,10 @@ onready var anim = $AnimatedSprite
 onready var rayCast = $RayCast2D
 onready var attackEffect = $AttackSound
 onready var walkingEffect = $WalkingSound
-
+onready var healEffect	  = $HealSound
 var swordSwipeSound = preload("res://SoundEffects/Attack/Wind-Shoowsh-Very-Quick-www.fesliyanstudios.com.wav")
-var walkingSound = preload("res://SoundEffects/Player/sneaker-shoe-on-concrete-floor-fast-pace-1-www.FesliyanStudios.com.wav")
+var walkingSound    = preload("res://SoundEffects/Player/sneaker-shoe-on-concrete-floor-fast-pace-1-www.FesliyanStudios.com.wav")
+var healSound       = preload("res://SoundEffects/Item/heal.wav")
 var walking = false
 # Called when the node enters the scene tree for the first time.
 func _ready ():
@@ -90,8 +91,10 @@ func playSound(sound, soundToPlay):
 		if !walkingEffect.is_playing():
 			walkingEffect.stream = soundToPlay
 			walkingEffect.play()
-	
-
+	if (sound == 'heal'):
+		if !healEffect.is_playing():
+			healEffect.stream = soundToPlay
+			healEffect.play()
 
 func stopSound(soundToStop):
 	soundToStop.stop()
@@ -132,8 +135,10 @@ func _input(event):
 	if Input.is_action_just_pressed("heal"):
 		if (PlayerInventory.remove_item("Small Health Potion",1)):
 				var healAmount = int(JsonData.item_data["Small Health Potion"]["AddHealth"])
+				playSound('heal',healSound)
 				curHp += healAmount
-				
+				if (curHp >= maxHp):
+					curHp = maxHp
 
 func _process (delta):
 	 # give_gold function
