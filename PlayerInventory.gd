@@ -41,7 +41,6 @@ func add_item(item_name, item_quantity):
 		attempt_to_add_item(item_name,item_quantity,inventory,slot_indices)
 		
 func attempt_to_add_item(item_name,item_quantity,checkInventory,indices,is_hotbar: bool = false):
-	print('checkInventory: ',checkInventory[0][0])
 	for item in indices:
 		if checkInventory[item][0] == item_name:
 			var stack_size = int(JsonData.item_data[item_name]["StackSize"])
@@ -64,8 +63,6 @@ func attempt_to_add_item(item_name,item_quantity,checkInventory,indices,is_hotba
 	return false
 
 func add_item_to_empty_slot(item: ItemClass, slot: SlotClass):
-	print('item: ',item)
-	print('hotbar: ',hotbar)
 	match slot.slot_type:
 		SlotClass.SlotType.HOTBAR:
 			hotbar[slot.slot_index] = [item.item_name, item.item_quantity]	
@@ -84,55 +81,47 @@ func update_slot_visual(slot_index, item_name, new_quantity, is_hotbar: bool = f
 	else:
 		slot.initialize_item(item_name, new_quantity)
 
-func remove_used_item(item_name, item_quantity, is_hotbar: bool = false):
+func remove_used_item(item_name, item_index, item_quantity, is_hotbar: bool = false):
 	var slot_indices: Array
 	var item_found = false
 	var temp_item_name
 	var temp_quantity
 	
-	if is_hotbar:
-		slot_indices = hotbar.keys()
+	var slot 
+	if (is_hotbar):
+		slot = get_tree().root.get_node("/root/MainScene/UserInterface/Hotbar/HotbarSlots/HotbarSlot" + str(item_index + 1))
+		print("slot: ",slot)
 	else:
-		slot_indices = inventory.keys()
-
-	slot_indices.sort()
-	for item in slot_indices:
-		var slot 
-		if (is_hotbar):
-			slot = get_tree().root.get_node("/root/MainScene/UserInterface/Hotbar/HotbarSlots/HotbarSlot" + str(item + 1))
-			print("slot: ",slot)
-		else:
-			slot = get_tree().root.get_node("/root/MainScene/UserInterface/Inventory/GridContainer/Panel" + str(item + 1))
-		if (is_hotbar):
-			temp_item_name = hotbar[item][0]
-			temp_quantity  = hotbar[item][1]
-		else:
-			temp_item_name = inventory[item][0]
-			temp_quantity = inventory[item][1]
-		
-		if temp_item_name == item_name:
-			temp_quantity -= item_quantity
-			self.decrease_item_quantity(slot, item_quantity)
-			print("temp_quantity: ",temp_quantity)
-			print("item: ",item)
-			print("temp_item_name: ", temp_item_name)
-			print("temp_quantity: ",temp_quantity)
-			print("hotbar: ",hotbar)
-			if (temp_quantity > 0):
-				print("Is this executing?")
-				if (is_hotbar):
-
-					update_slot_visual(item, temp_item_name, temp_quantity,true)
-				else:
-					update_slot_visual(item, temp_item_name, temp_quantity)
+		slot = get_tree().root.get_node("/root/MainScene/UserInterface/Inventory/GridContainer/Panel" + str(item_index + 1))
+	if (is_hotbar):
+		temp_item_name = hotbar[item_index][0]
+		temp_quantity  = hotbar[item_index][1]
+	else:
+		temp_item_name = inventory[item_index][0]
+		temp_quantity = inventory[item_index][1]
+	
+	if temp_item_name == item_name:
+		temp_quantity -= item_quantity
+		self.decrease_item_quantity(slot, item_quantity)
+		print("temp_quantity: ",temp_quantity)
+		print("item_index: ",item_index)
+		print("temp_item_name: ", temp_item_name)
+		print("temp_quantity: ",temp_quantity)
+		print("hotbar: ",hotbar)
+		if (temp_quantity > 0):
+			print("Is this executing?")
+			if (is_hotbar):
+				update_slot_visual(item_index, temp_item_name, temp_quantity,true)
 			else:
-				#Remove slot item visual
-				slot.removeSlotItem()
-				#Remove from dictionary, not doing this will cause the item to get added back to the inventory visual
-				remove_from_dict(slot,is_hotbar)
+				update_slot_visual(item_index, temp_item_name, temp_quantity)
+		else:
+			#Remove slot item visual
+			slot.removeSlotItem()
+			#Remove from dictionary, not doing this will cause the item to get added back to the inventory visual
+			remove_from_dict(slot,is_hotbar)
 
-			item_found = true
-			break
+		item_found = true
+
 	return item_found
 
 

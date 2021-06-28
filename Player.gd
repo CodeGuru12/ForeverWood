@@ -133,21 +133,40 @@ func _input(event):
 			stopSound(attackEffect)
 
 	if Input.is_action_just_pressed("heal"):
-		var checkHotbar = PlayerInventory.remove_used_item("Small Health Potion",1,true)
-		if (not checkHotbar):
-			if (PlayerInventory.remove_used_item("Small Health Potion",1) ):
-				var healAmount = int(JsonData.item_data["Small Health Potion"]["AddHealth"])
+
+		var isConsumable = isSelectHotbarItemConsumable()	
+		if (isConsumable):
+			var healAmount = int(JsonData.item_data[PlayerInventory.hotbar[PlayerInventory.active_item_slot][0]]["AddHealth"])
+			var checkHotbar = PlayerInventory.remove_used_item(PlayerInventory.hotbar[PlayerInventory.active_item_slot][0],PlayerInventory.active_item_slot,1,true)
+			if (checkHotbar):
 				playSound('heal',healSound)
 				curHp += healAmount
 				if (curHp >= maxHp):
 					curHp = maxHp
+			#if (not checkHotbar):
+				#if (PlayerInventory.remove_used_item(PlayerInventory.hotbar[PlayerInventory.active_item_slot][0],1,true) ):
+				#	var healAmount = int(JsonData.item_data[PlayerInventory.hotbar[PlayerInventory.active_item_slot][0]]["AddHealth"])
+				#	playSound('heal',healSound)
+				#	curHp += healAmount
+				#	if (curHp >= maxHp):
+				#		curHp = maxHp
+#			else:
+#				var healAmount = int(JsonData.item_data[PlayerInventory.hotbar[PlayerInventory.active_item_slot][0]]["AddHealth"])
+#				playSound('heal',healSound)
+#				curHp += healAmount
+#				if (curHp >= maxHp):
+#					curHp = maxHp
+		
+func isSelectHotbarItemConsumable():
+	var isConsumable = false
+	if (PlayerInventory.hotbar.has(PlayerInventory.active_item_slot) == true):
+		if (JsonData.item_data[PlayerInventory.hotbar[PlayerInventory.active_item_slot][0]]["ItemCategory"] == "Consumable"):
+			isConsumable = true 
 		else:
-			var healAmount = int(JsonData.item_data["Small Health Potion"]["AddHealth"])
-			playSound('heal',healSound)
-			curHp += healAmount
-			if (curHp >= maxHp):
-				curHp = maxHp
-			
+			isConsumable = false		
+				
+	return isConsumable
+	
 func _process (delta):
 	 # give_gold function
 	ui.update_gold_text(inventory['gold'])
