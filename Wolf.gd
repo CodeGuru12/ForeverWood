@@ -50,7 +50,6 @@ var velocityDirection = Vector2()
 var originalLocation = Vector2()
 var vel = Vector2()
 onready var anim = $AnimatedSprite
-onready var line2d = $Line2D
 onready var timer = $Timer
 onready var target = null#get_node("/root/MainScene/Player")
 var player = null
@@ -92,15 +91,15 @@ func movementBuffer():
 	else:
 		trackPoints.append(player.global_position)
 	
-func generate_path(delta: float, target) -> Vector2:
+func generate_path(delta: float, ltarget) -> Vector2:
 	#print("searchForPlayer: ",searchForPlayer)
-	if (target != null and searchForPlayer == true):
-		direction = target.global_position - self.global_position
+	if (ltarget != null and searchForPlayer == true):
+		direction = ltarget.global_position - self.global_position
 		# Update the direction of the ray, forcibly update the detection result, if there is no collision, move in this direction first
 		_raycastTarget.cast_to = direction
 		_raycastTarget.force_raycast_update()
 		# If there is a collision between the AI ​​and the target or cannot move, then start to detect the recorded target array
-		if _raycastTarget.is_colliding() && _raycastTarget.get_collider() != target || self.test_move(self.transform, moveSpeed * delta * direction.normalized()):
+		if _raycastTarget.is_colliding() && _raycastTarget.get_collider() != ltarget || self.test_move(self.transform, moveSpeed * delta * direction.normalized()):
 			# Loop through all recorded points, looking for points that can be moved
 			for point in trackPoints:
 				var newDirection = point - self.global_position
@@ -189,7 +188,6 @@ func oldSimpleNavigation():
 		
 func _physics_process (delta):
 	#if dist > attackDist and dist < chaseDist:
-	#line2d.global_position = Vector2.ZERO
 	if (dead == false):
 		if (callTimer >= recordTimeInterval):
 			velocityDirection = generate_path(delta,player)

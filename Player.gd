@@ -133,13 +133,21 @@ func _input(event):
 			stopSound(attackEffect)
 
 	if Input.is_action_just_pressed("heal"):
-		if (PlayerInventory.remove_item("Small Health Potion",1)):
+		var checkHotbar = PlayerInventory.remove_used_item("Small Health Potion",1,true)
+		if (not checkHotbar):
+			if (PlayerInventory.remove_used_item("Small Health Potion",1) ):
 				var healAmount = int(JsonData.item_data["Small Health Potion"]["AddHealth"])
 				playSound('heal',healSound)
 				curHp += healAmount
 				if (curHp >= maxHp):
 					curHp = maxHp
-
+		else:
+			var healAmount = int(JsonData.item_data["Small Health Potion"]["AddHealth"])
+			playSound('heal',healSound)
+			curHp += healAmount
+			if (curHp >= maxHp):
+				curHp = maxHp
+			
 func _process (delta):
 	 # give_gold function
 	ui.update_gold_text(inventory['gold'])

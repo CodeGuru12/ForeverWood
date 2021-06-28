@@ -16,7 +16,6 @@ func _ready():
 
 func _physics_process(delta):
 	if (being_picked_up == true):
-		#print("Coming in here?")
 		var direction = global_position.direction_to(player.global_position)
 		velocity = velocity.move_toward(direction* MAX_SPEED, ACCELERATION * delta)
 		

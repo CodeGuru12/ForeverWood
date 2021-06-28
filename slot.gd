@@ -2,33 +2,42 @@ extends Panel
 
 
 # Declare member variables here. Examples:
-var ItemClass = preload("res://Item.tscn")
-var empty_slot = preload("res://UI/Inventory/empty_slot.png")
-var default_slot = preload("res://UI/Inventory/item.png")
+var ItemClass     = preload("res://Item.tscn")
+var empty_slot    = preload("res://UI/Inventory/Hotbar/empty_slot.png")
+var occupied_slot = preload("res://UI/Inventory/Hotbar/occupied_slot.png")
+var selected_slot = preload("res://UI/Inventory/Hotbar/selected_slot.png")
+
 var slot_index
 var size = empty_slot.get_size()
 var item = null
 onready var gridNode = find_parent("GridContainer")
 #onready var button = get_node("/root/Inventory/CanvasLayer/Popup/TextureRect/GridContainer/Button")
-var default_style : StyleBoxTexture = null
-var empty_style : StyleBoxTexture = null
+var occupied_style : StyleBoxTexture = null
+var empty_style    : StyleBoxTexture = null
+var selected_style : StyleBoxTexture = null
 #onready var numColumns = gridNode.get_columns()
 #onready var gridSize = gridNode.get_size()
 #onready var origin = gridNode.get_global_transform().origin
 #onready var spacing = gridSize[0]/(numColumns)
 
+var  slot_type
+enum SlotType {HOTBAR = 0, INVENTORY = 1}
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	default_style = StyleBoxTexture.new()
-	empty_style = StyleBoxTexture.new()
-	empty_style.texture = empty_slot
-	default_style.texture = default_slot
-		
+	occupied_style = StyleBoxTexture.new()
+	empty_style    = StyleBoxTexture.new()
+	selected_style = StyleBoxTexture.new()
+	
+	empty_style.texture    = empty_slot
+	occupied_style.texture = occupied_slot
+	selected_style.texture = selected_slot
+	
 	refresh_style()
 
 func pickFromSlot():
 	remove_child(item)
-	var inventoryNode = find_parent("Inventory")
+	var inventoryNode = find_parent("UserInterface")
 	inventoryNode.add_child(item)
 	item = null
 	refresh_style()
@@ -74,17 +83,20 @@ func putIntoSlot(new_item):
 	item = new_item
 	item.position = Vector2(1,1)
 	
-	var inventoryNode = find_parent("Inventory")
+	var inventoryNode = find_parent("UserInterface")
 	inventoryNode.remove_child(item)
 	add_child(item)
+	print("putIntoSlot item: ",item)
 	refresh_style()
 
 	
 func refresh_style():
-	if item == null:
+	if (SlotType.HOTBAR == slot_type and PlayerInventory.active_item_slot == slot_index):
+		set("custom_styles/panel", selected_style)
+	elif item == null:
 		set("custom_styles/panel", empty_style)
 	else:
-		set("custom_styles/panel",default_style)
+		set("custom_styles/panel",occupied_style)
 		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

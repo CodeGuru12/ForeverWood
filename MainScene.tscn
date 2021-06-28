@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Scene/Fire/fire.tres" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://Inventory.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Wolf.tscn" type="PackedScene" id=18]
 [ext_resource path="res://ItemDrop.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Hotbar.tscn" type="PackedScene" id=20]
 
 [sub_resource type="TileSet" id=1]
 0/name = "wholeWaterEffect.tres 0"
@@ -219,10 +220,15 @@ visible = false
 position = Vector2( 0, 0 )
 
 [node name="UI" parent="UserInterface" instance=ExtResource( 14 )]
+anchor_top = -0.00166667
+anchor_bottom = -0.00166667
 margin_left = -84.6005
 margin_top = -330.784
 margin_right = -49.6005
 margin_bottom = -308.784
+
+[node name="Hotbar" parent="UserInterface" instance=ExtResource( 20 )]
+position = Vector2( 100.597, 524.42 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -258,4 +264,3 @@ collision_mask = 3
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
-autoplay = true

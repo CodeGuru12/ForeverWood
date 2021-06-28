@@ -29,12 +29,9 @@ func _ready():
 
 func set_item(nm, qt):
 	item_name = nm
-	print("name: ",item_name)
-	count+=1
-	print("count: ",count)
 	item_quantity = qt
 	$TextureRect.texture = load("res://Assets/Items/Item_icons/"+ item_name + ".png")
-	print("texture: ",$TextureRect.texture)
+	#print("texture: ",$TextureRect.texture)
 	var stack_size = int(JsonData.item_data[item_name]["StackSize"])
 	if stack_size == 1:
 		$Label.visible = false
